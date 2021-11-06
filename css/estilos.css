@@ -135,13 +135,13 @@ footer h4 {
       padding: 5px; }
   /************REVISAR QUE AL HACER EL HOVER, LA IMAGEN DE FONDO SE OPAQUE Y APAREZCA EL TEXTO DESCRIPTIVO**********/
   #dataEngLogo {
-    background: url("../images/DataEngineering.png") center no-repeat;
+    background: url("/images/DataEngineering.png") center no-repeat;
     background-size: 80%;
     background-position: center; }
     #dataEngLogo:hover {
       opacity: 0.6; }
   #dataAltLogo {
-    background: url("../images/data-analytics.png") center no-repeat;
+    background: url("/images/data-analytics.png") center no-repeat;
     background-size: 120%;
     background-position: center; }
     #dataAltLogo:hover {
