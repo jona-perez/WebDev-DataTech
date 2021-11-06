@@ -135,7 +135,7 @@ footer h4 {
       padding: 5px; }
   /************REVISAR QUE AL HACER EL HOVER, LA IMAGEN DE FONDO SE OPAQUE Y APAREZCA EL TEXTO DESCRIPTIVO**********/
   #dataEngLogo {
-    background: url("https://jona-perez.github.io/WebDev-DataTech/images/DataEngineering.png") center no-repeat;
+    background: url("/images/DataEngineering.png") center no-repeat;
     background-size: 80%;
     background-position: center; }
     #dataEngLogo:hover {
