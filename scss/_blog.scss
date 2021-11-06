@@ -15,79 +15,297 @@
     color: white;
 }
 
-.grid{
-    text-decoration: none;
-    display: grid;
-    grid-gap: 8px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr) ;
-    grid-template-areas: 
-    "uno uno uno dos dos"
-    "uno uno uno tres tres"
-    "cuatro cuatro seis seis seis"
-    "cinco cinco seis seis seis";
-}
-
-.card-body{
-    height: 9em;
-}
-
-.btn-outline-primary{
-    background-color: white;
-}
-
-.grande{
-    opacity: 0.75;
-    width: 100%;
-    transition: 0.6s;
-    max-height: 50%;
-}
-
-.chico{
-    opacity: 0.75;
-    width: 100%;
-    transition: 0.6s;
-    color: black;
-}
-
-.uno{
-    grid-area: uno;
-    &:hover{
-        opacity: 1;
+@media only screen and (max-width: 599px){
+    .grid{
+        text-decoration: none;
+        display: block;
+    }
+    
+    .card-body{
+        height: 9em;
+    }
+    
+    .btn-outline-primary{
+        background-color: white;
+    }
+    
+    .grande{
+        opacity: 0.75;
+        width: 100%;
+        transition: 0.6s;
+        max-height: 50%;
+    }
+    
+    .chico{
+        opacity: 0.75;
+        width: 100%;
+        transition: 0.6s;
+        color: black;
+    }
+    
+    .uno{
+        grid-area: uno;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .dos{
+        grid-area: dos;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+            }
+    }
+    
+    .tres{
+        grid-area: tres;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .cuatro{
+        grid-area: cuatro;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .cinco{
+        grid-area: cinco;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .seis{
+        grid-area: seis;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
     }
 }
 
-.dos{
-    grid-area: dos;
-    &:hover{
-        opacity: 1;
+@media only screen and (min-width: 600px) and (max-width: 767px){
+    .grid{
+        text-decoration: none;
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr) ;
+        grid-template-areas: 
+        "uno uno uno dos dos"
+        "uno uno uno tres tres"
+        "cuatro cuatro seis seis seis"
+        "cinco cinco seis seis seis";
+    }
+
+    p{
+        font-size: smaller;
+    }
+
+    h4{
+        font-size: smaller;
+    }
+
+    h5{
+        font-size: smaller;
+    }
+    
+    .card-body{
+        height: 9em;
+    }
+    
+    .btn-outline-primary{
+        background-color: white;
+    }
+    
+    .grande{
+        opacity: 0.75;
+        width: 100%;
+        transition: 0.6s;
+        max-height: 50%;
+    }
+    
+    .chico{
+        opacity: 0.75;
+        width: 100%;
+        transition: 0.6s;
+        color: black;
+    }
+    
+    .uno{
+        grid-area: uno;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .dos{
+        grid-area: dos;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+            }
+    }
+    
+    .tres{
+        grid-area: tres;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .cuatro{
+        grid-area: cuatro;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .cinco{
+        grid-area: cinco;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .seis{
+        grid-area: seis;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
     }
 }
 
-.tres{
-    grid-area: tres;
-    &:hover{
-        opacity: 1;
+@media only screen and (min-width: 768px){
+    .grid{
+        text-decoration: none;
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr) ;
+        grid-template-areas: 
+        "uno uno uno dos dos"
+        "uno uno uno tres tres"
+        "cuatro cuatro seis seis seis"
+        "cinco cinco seis seis seis";
     }
-}
-
-.cuatro{
-    grid-area: cuatro;
-    &:hover{
-        opacity: 1;
+    
+    .card-body{
+        height: 9em;
     }
-}
-
-.cinco{
-    grid-area: cinco;
-    &:hover{
-        opacity: 1;
+    
+    .btn-outline-primary{
+        background-color: white;
     }
-}
-
-.seis{
-    grid-area: seis;
-    &:hover{
-        opacity: 1;
+    
+    .grande{
+        opacity: 0.75;
+        width: 100%;
+        transition: 0.6s;
+        max-height: 50%;
+    }
+    
+    .chico{
+        opacity: 0.75;
+        width: 100%;
+        transition: 0.6s;
+        color: black;
+    }
+    
+    .uno{
+        grid-area: uno;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .dos{
+        grid-area: dos;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+            }
+    }
+    
+    .tres{
+        grid-area: tres;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .cuatro{
+        grid-area: cuatro;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .cinco{
+        grid-area: cinco;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
+    }
+    
+    .seis{
+        grid-area: seis;
+        &:hover{
+            opacity: 1;
+            transform: $escalado;
+            transition: $tiempoescalado;
+            z-index: $z-escalado;
+        }
     }
 }
