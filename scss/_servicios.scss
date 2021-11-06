@@ -1,119 +1,240 @@
 /*---------------SERVICIOS--------------*/
-
-.servicios__main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 2vh;
-}
-
-.servicios__boxes{
-    background: linear-gradient(to top, grey,rgb(95, 91, 91),black);
-    width: 400px;
-    height: 550px;
-    margin: 40px;
-    padding: 0px;
-    display: inline-block;
-    color: white;
-    padding-top: 2rem;
-    overflow: auto;
-    position: relative;
-    h3{
-        font-family: $font-main;
-        font-weight: bold;
-        font-size: 30px;
-        text-align: center;
-        word-spacing: 5px;
-        letter-spacing: 1.5px;
+@media only screen and (max-width: 999px){
+    .servicios__main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2vh;
     }
-}
 
-.servicios__content{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-    padding: 15px;
-    text-align: justify;
-    word-spacing: 3px;
-    overflow: auto;
-    height: 90%;
-    ul{
-        list-style: none;
-        list-style-type: none;
-        text-decoration: none;
-        padding: 5px;
-    }
-    li{
-        padding: 5px;
-    }
-}
-
-/************REVISAR QUE AL HACER EL HOVER, LA IMAGEN DE FONDO SE OPAQUE Y APAREZCA EL TEXTO DESCRIPTIVO**********/
-
-#dataEngLogo{
-    background: url('/images/DataEngineering.png') center no-repeat;
-    background-size: 80%;
-    background-position: center;
-    &:hover{
-        opacity: 0.6;
-    }
-}
-
-#dataAltLogo{
-    background: url('/images/data-analytics.png') center no-repeat;
-    background-size: 120%;
-    background-position: center;
-    &:hover{
-        opacity: 0.6;
-    }
-}
-
-#dataSciLogo{
-    background: url('/images/data-science.png') center no-repeat;
-    background-size: 120%;
-    background-position: center;
-    &:hover{
-        opacity: 0.6;
-    }
-}
-
-/*---------------MULTI ITEM CAROUSEL-------------*/
-
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
+    .servicios__boxes{
+        background: linear-gradient(to top, grey,rgb(95, 91, 91),black);
+        width: 400px;
+        height: 550px;
+        margin: 40px;
+        padding: 0px;
         display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
+        color: white;
+        padding-top: 2rem;
+        overflow: auto;
+        position: relative;
+        h3{
+            font-family: $font-main;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            word-spacing: 5px;
+            letter-spacing: 1.5px;
+        }
     }
     
-    .carousel-inner .carousel-item-start.active, 
+    .servicios__content{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+        padding: 15px;
+        text-align: justify;
+        word-spacing: 3px;
+        overflow: auto;
+        height: 90%;
+        ul{
+            list-style: none;
+            list-style-type: none;
+            text-decoration: none;
+            padding: 5px;
+        }
+        li{
+            padding: 5px;
+        }
+    }
+    
+    /************REVISAR QUE AL HACER EL HOVER, LA IMAGEN DE FONDO SE OPAQUE Y APAREZCA EL TEXTO DESCRIPTIVO**********/
+    
+    #dataEngLogo{
+        background: url('/images/DataEngineering.png') center no-repeat;
+        background-size: 80%;
+        background-position: center;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    
+    #dataAltLogo{
+        background: url('/images/data-analytics.png') center no-repeat;
+        background-size: 120%;
+        background-position: center;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    
+    #dataSciLogo{
+        background: url('/images/data-science.png') center no-repeat;
+        background-size: 120%;
+        background-position: center;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    
+    /*---------------MULTI ITEM CAROUSEL-------------*/
+    
+    @media (max-width: 767px) {
+        .carousel-inner .carousel-item > div {
+            display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+    
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
     .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
+        display: flex;
+    }
+    
+    /* medium and up screens */
+    @media (min-width: 768px) {
+        
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+        }
+        
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+        }
+    }
+    
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+    }
+    
+    .img-fluid{
+        max-height: 6rem;
+        opacity: 0.3;
     }
 }
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-transform: translateX(0);
-}
-
-.img-fluid{
-    max-height: 6rem;
-    opacity: 0.3;
+@media only screen and (min-width: 1000px){
+    .servicios__main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 2vh;
+    }
+    
+    .servicios__boxes{
+        background: linear-gradient(to top, grey,rgb(95, 91, 91),black);
+        width: 400px;
+        height: 550px;
+        margin: 40px;
+        padding: 0px;
+        display: inline-block;
+        color: white;
+        padding-top: 2rem;
+        overflow: auto;
+        position: relative;
+        h3{
+            font-family: $font-main;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            word-spacing: 5px;
+            letter-spacing: 1.5px;
+        }
+    }
+    
+    .servicios__content{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+        padding: 15px;
+        text-align: justify;
+        word-spacing: 3px;
+        overflow: auto;
+        height: 90%;
+        ul{
+            list-style: none;
+            list-style-type: none;
+            text-decoration: none;
+            padding: 5px;
+        }
+        li{
+            padding: 5px;
+        }
+    }
+    
+    /************REVISAR QUE AL HACER EL HOVER, LA IMAGEN DE FONDO SE OPAQUE Y APAREZCA EL TEXTO DESCRIPTIVO**********/
+    
+    #dataEngLogo{
+        background: url('/images/DataEngineering.png') center no-repeat;
+        background-size: 80%;
+        background-position: center;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    
+    #dataAltLogo{
+        background: url('/images/data-analytics.png') center no-repeat;
+        background-size: 120%;
+        background-position: center;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    
+    #dataSciLogo{
+        background: url('/images/data-science.png') center no-repeat;
+        background-size: 120%;
+        background-position: center;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    
+    /*---------------MULTI ITEM CAROUSEL-------------*/
+    
+    @media (max-width: 767px) {
+        .carousel-inner .carousel-item > div {
+            display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+    
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+    
+    /* medium and up screens */
+    @media (min-width: 768px) {
+        
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+        }
+        
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+        }
+    }
+    
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+    }
+    
+    .img-fluid{
+        max-height: 6rem;
+        opacity: 0.3;
+    }
 }

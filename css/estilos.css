@@ -27,120 +27,147 @@ footer h4 {
   font-size: larger; }
 
 /*---------------EQUIPO--------------*/
-.containerTeam {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 5rem; }
+@media only screen and (min-width: 1000px) {
+  .containerTeam {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem; }
+  .columnBlock {
+    width: 30%;
+    height: 50vh;
+    text-align: justify;
+    padding: 1rem;
+    color: white; }
+    .columnBlock h2 {
+      text-align: center;
+      padding: 1rem; }
+  .imgTeam {
+    width: 100%;
+    height: 80%;
+    opacity: 0.6;
+    transition: 0.6s; }
+    .imgTeam:hover {
+      opacity: 1; }
+  .imgOurTeam {
+    width: 100%;
+    height: 24vh;
+    margin: 0;
+    opacity: 0.6;
+    align-items: center;
+    transition: 0.6s; }
+    .imgOurTeam:hover {
+      opacity: 1; } }
 
-.columnBlock {
-  width: 30%;
-  height: 50vh;
-  text-align: justify;
-  padding: 1rem;
-  color: white; }
-  .columnBlock h2 {
-    text-align: center;
-    padding: 1rem; }
-
-.imgTeam {
-  width: 100%;
-  height: 80%;
-  opacity: 0.6;
-  transition: 0.6s; }
-  .imgTeam:hover {
-    opacity: 1; }
-
-.imgOurTeam {
-  width: 100%;
-  height: 24vh;
-  margin: 0;
-  opacity: 0.6;
-  align-items: center;
-  transition: 0.6s; }
-  .imgOurTeam:hover {
-    opacity: 1; }
+@media only screen and (max-width: 999px) {
+  .containerTeam {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5rem; }
+  .columnBlock {
+    width: 100%;
+    text-align: justify;
+    padding: 1rem;
+    color: white;
+    justify-items: center;
+    justify-content: center; }
+    .columnBlock h2 {
+      text-align: center;
+      padding: 1rem; }
+  .imgTeam {
+    width: 100%;
+    opacity: 0.6;
+    transition: 0.6s; }
+    .imgTeam:hover {
+      opacity: 1; }
+  .imgOurTeam {
+    width: 75%;
+    margin: 0;
+    opacity: 0.6;
+    align-items: center;
+    transition: 0.6s; }
+    .imgOurTeam:hover {
+      opacity: 1; } }
 
 /*---------------SERVICIOS--------------*/
-.servicios__main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: 2vh; }
+@media only screen and (max-width: 999px) {
+  .servicios__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2vh; }
+  .servicios__boxes {
+    background: linear-gradient(to top, grey, #5f5b5b, black);
+    width: 400px;
+    height: 550px;
+    margin: 40px;
+    padding: 0px;
+    display: block;
+    color: white;
+    padding-top: 2rem;
+    overflow: auto;
+    position: relative; }
+    .servicios__boxes h3 {
+      font-family: "Bebas Neue", cursive;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+      word-spacing: 5px;
+      letter-spacing: 1.5px; }
+  .servicios__content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    padding: 15px;
+    text-align: justify;
+    word-spacing: 3px;
+    overflow: auto;
+    height: 90%; }
+    .servicios__content ul {
+      list-style: none;
+      list-style-type: none;
+      text-decoration: none;
+      padding: 5px; }
+    .servicios__content li {
+      padding: 5px; }
+  /************REVISAR QUE AL HACER EL HOVER, LA IMAGEN DE FONDO SE OPAQUE Y APAREZCA EL TEXTO DESCRIPTIVO**********/
+  #dataEngLogo {
+    background: url("/images/DataEngineering.png") center no-repeat;
+    background-size: 80%;
+    background-position: center; }
+    #dataEngLogo:hover {
+      opacity: 0.6; }
+  #dataAltLogo {
+    background: url("/images/data-analytics.png") center no-repeat;
+    background-size: 120%;
+    background-position: center; }
+    #dataAltLogo:hover {
+      opacity: 0.6; }
+  #dataSciLogo {
+    background: url("/images/data-science.png") center no-repeat;
+    background-size: 120%;
+    background-position: center; }
+    #dataSciLogo:hover {
+      opacity: 0.6; }
+  /*---------------MULTI ITEM CAROUSEL-------------*/ }
 
-.servicios__boxes {
-  background: linear-gradient(to top, grey, #5f5b5b, black);
-  width: 400px;
-  height: 550px;
-  margin: 40px;
-  padding: 0px;
-  display: inline-block;
-  color: white;
-  padding-top: 2rem;
-  overflow: auto;
-  position: relative; }
-  .servicios__boxes h3 {
-    font-family: "Bebas Neue", cursive;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    word-spacing: 5px;
-    letter-spacing: 1.5px; }
-
-.servicios__content {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 17px;
-  padding: 15px;
-  text-align: justify;
-  word-spacing: 3px;
-  overflow: auto;
-  height: 90%; }
-  .servicios__content ul {
-    list-style: none;
-    list-style-type: none;
-    text-decoration: none;
-    padding: 5px; }
-  .servicios__content li {
-    padding: 5px; }
-
-/************REVISAR QUE AL HACER EL HOVER, LA IMAGEN DE FONDO SE OPAQUE Y APAREZCA EL TEXTO DESCRIPTIVO**********/
-#dataEngLogo {
-  background: url("/images/DataEngineering.png") center no-repeat;
-  background-size: 80%;
-  background-position: center; }
-  #dataEngLogo:hover {
-    opacity: 0.6; }
-
-#dataAltLogo {
-  background: url("/images/data-analytics.png") center no-repeat;
-  background-size: 120%;
-  background-position: center; }
-  #dataAltLogo:hover {
-    opacity: 0.6; }
-
-#dataSciLogo {
-  background: url("/images/data-science.png") center no-repeat;
-  background-size: 120%;
-  background-position: center; }
-  #dataSciLogo:hover {
-    opacity: 0.6; }
-
-/*---------------MULTI ITEM CAROUSEL-------------*/
-@media (max-width: 767px) {
+@media only screen and (max-width: 999px) and (max-width: 767px) {
   .carousel-inner .carousel-item > div {
     display: none; }
   .carousel-inner .carousel-item > div:first-child {
     display: block; } }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex; }
+@media only screen and (max-width: 999px) {
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex; }
+  /* medium and up screens */ }
 
-/* medium and up screens */
-@media (min-width: 768px) {
+@media only screen and (max-width: 999px) and (min-width: 768px) {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(25%); }
@@ -148,13 +175,103 @@ footer h4 {
   .carousel-inner .carousel-item-prev {
     transform: translateX(-25%); } }
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-  transform: translateX(0); }
+@media only screen and (max-width: 999px) {
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0); }
+  .img-fluid {
+    max-height: 6rem;
+    opacity: 0.3; } }
 
-.img-fluid {
-  max-height: 6rem;
-  opacity: 0.3; }
+@media only screen and (min-width: 1000px) {
+  .servicios__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 2vh; }
+  .servicios__boxes {
+    background: linear-gradient(to top, grey, #5f5b5b, black);
+    width: 400px;
+    height: 550px;
+    margin: 40px;
+    padding: 0px;
+    display: inline-block;
+    color: white;
+    padding-top: 2rem;
+    overflow: auto;
+    position: relative; }
+    .servicios__boxes h3 {
+      font-family: "Bebas Neue", cursive;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+      word-spacing: 5px;
+      letter-spacing: 1.5px; }
+  .servicios__content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    padding: 15px;
+    text-align: justify;
+    word-spacing: 3px;
+    overflow: auto;
+    height: 90%; }
+    .servicios__content ul {
+      list-style: none;
+      list-style-type: none;
+      text-decoration: none;
+      padding: 5px; }
+    .servicios__content li {
+      padding: 5px; }
+  /************REVISAR QUE AL HACER EL HOVER, LA IMAGEN DE FONDO SE OPAQUE Y APAREZCA EL TEXTO DESCRIPTIVO**********/
+  #dataEngLogo {
+    background: url("/images/DataEngineering.png") center no-repeat;
+    background-size: 80%;
+    background-position: center; }
+    #dataEngLogo:hover {
+      opacity: 0.6; }
+  #dataAltLogo {
+    background: url("/images/data-analytics.png") center no-repeat;
+    background-size: 120%;
+    background-position: center; }
+    #dataAltLogo:hover {
+      opacity: 0.6; }
+  #dataSciLogo {
+    background: url("/images/data-science.png") center no-repeat;
+    background-size: 120%;
+    background-position: center; }
+    #dataSciLogo:hover {
+      opacity: 0.6; }
+  /*---------------MULTI ITEM CAROUSEL-------------*/ }
+
+@media only screen and (min-width: 1000px) and (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none; }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block; } }
+
+@media only screen and (min-width: 1000px) {
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex; }
+  /* medium and up screens */ }
+
+@media only screen and (min-width: 1000px) and (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%); }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%); } }
+
+@media only screen and (min-width: 1000px) {
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0); }
+  .img-fluid {
+    max-height: 6rem;
+    opacity: 0.3; } }
 
 /*---------------BLOG--------------*/
 .alert h2 {
@@ -170,7 +287,7 @@ footer h4 {
   background-color: rgba(10, 10, 155, 0.418);
   color: white; }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 768px) {
   .grid {
     text-decoration: none;
     display: block; }
@@ -182,12 +299,14 @@ footer h4 {
     opacity: 0.75;
     width: 100%;
     transition: 0.6s;
-    max-height: 50%; }
+    max-height: 50%;
+    overflow: auto; }
   .chico {
     opacity: 0.75;
     width: 100%;
     transition: 0.6s;
-    color: black; }
+    color: black;
+    overflow: auto; }
   .uno {
     grid-area: uno; }
     .uno:hover {
@@ -231,7 +350,7 @@ footer h4 {
       transition: 0.4s;
       z-index: 200; } }
 
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
   .grid {
     text-decoration: none;
     display: grid;
@@ -240,13 +359,15 @@ footer h4 {
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "uno uno uno dos dos" "uno uno uno tres tres" "cuatro cuatro seis seis seis" "cinco cinco seis seis seis"; }
   p {
-    font-size: smaller; }
+    font-size: smaller;
+    overflow: auto; }
   h4 {
     font-size: smaller; }
   h5 {
     font-size: smaller; }
   .card-body {
-    height: 9em; }
+    height: 9em;
+    overflow: auto; }
   .btn-outline-primary {
     background-color: white; }
   .grande {
@@ -302,7 +423,7 @@ footer h4 {
       transition: 0.4s;
       z-index: 200; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1201px) {
   .grid {
     text-decoration: none;
     display: grid;
@@ -372,10 +493,6 @@ footer h4 {
   margin: 0;
   box-sizing: border-box; }
 
-/*---------------HEADER--------------*/
-.header__titles {
-  font-family: "Bebas Neue", cursive; }
-
 /*---------------MAIN--------------*/
 main {
   background-color: rgba(10, 10, 155, 0.418);
@@ -423,14 +540,25 @@ main {
   margin-left: auto;
   margin-right: auto; }
 
-/* Comento la parte del caption de la imagen central porque no funciona */
 .imgTextBlock {
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  top: 40%;
+  bottom: 60%;
   left: 5px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 2vh;
   font-weight: 500; }
+
+@media only screen and (max-width: 999px) {
+  .imgTextBlock {
+    position: absolute;
+    top: 15%;
+    bottom: 85%;
+    left: 5px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.8h;
+    font-weight: 500; } }

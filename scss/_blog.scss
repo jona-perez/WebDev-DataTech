@@ -15,7 +15,7 @@
     color: white;
 }
 
-@media only screen and (max-width: 599px){
+@media only screen and (max-width: 768px){
     .grid{
         text-decoration: none;
         display: block;
@@ -34,6 +34,7 @@
         width: 100%;
         transition: 0.6s;
         max-height: 50%;
+        overflow: auto;
     }
     
     .chico{
@@ -41,6 +42,7 @@
         width: 100%;
         transition: 0.6s;
         color: black;
+        overflow: auto;
     }
     
     .uno{
@@ -104,7 +106,7 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 767px){
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
     .grid{
         text-decoration: none;
         display: grid;
@@ -120,6 +122,7 @@
 
     p{
         font-size: smaller;
+        overflow: auto;
     }
 
     h4{
@@ -129,9 +132,10 @@
     h5{
         font-size: smaller;
     }
-    
+
     .card-body{
         height: 9em;
+        overflow: auto;
     }
     
     .btn-outline-primary{
@@ -213,7 +217,7 @@
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1201px){
     .grid{
         text-decoration: none;
         display: grid;

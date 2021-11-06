@@ -10,12 +10,6 @@
     box-sizing: border-box;
 }
 
-/*---------------HEADER--------------*/
-
-.header__titles{
-    font-family: $font-main;
-}
-
 /*---------------MAIN--------------*/
 
 main{
@@ -73,11 +67,10 @@ main{
     margin-right: auto;
 }
 
-/* Comento la parte del caption de la imagen central porque no funciona */
 .imgTextBlock{
     position: absolute;
-    top: 50%;
-    bottom: 50%;
+    top: 40%;
+    bottom: 60%;
     left: 5px;
     margin-left: 50%;
     transform: translate(-50%, -50%);
@@ -85,3 +78,17 @@ main{
     font-size: 2vh;
     font-weight: 500;
 } 
+
+@media only screen and (max-width: 999px){
+    .imgTextBlock{
+        position: absolute;
+        top: 15%;
+        bottom: 85%;
+        left: 5px;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 1.8h;
+        font-weight: 500;
+    } 
+}
