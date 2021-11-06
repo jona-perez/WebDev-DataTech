@@ -1,0 +1,84 @@
+@import"variables";
+@import"footer";
+@import"equipo";
+@import"servicios";
+@import"blog";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---------------HEADER--------------*/
+
+.header__titles{
+    font-family: $font-main;
+}
+
+/*---------------MAIN--------------*/
+
+main{
+    background-color: $bg-colorazul;
+    margin-top: 4em;
+    padding: 0;
+    min-height: 85vh;
+    overflow: hidden;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+#menu ul{
+    list-style: none;
+    li{
+        display: inline;
+        padding: 2rem;
+        margin-right: 4rem;
+        position: relative;
+        left: 50%;
+    }
+}
+
+.containercss{
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 2em;
+}
+
+.homepage__mainimg{
+    display: block;
+    border-radius: 5%; 
+    border-color:grey;
+    margin: 1rem;
+    opacity: 0.7;
+    width: 80%;
+    height: 20%;
+}
+
+.thumbnail{
+    position: relative;
+    display: inline-block;
+}
+
+/* Pone el contenido en el medio de la sección */
+.center{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Comento la parte del caption de la imagen central porque no funciona */
+.imgTextBlock{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 5px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 500;
+} 

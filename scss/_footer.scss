@@ -1,0 +1,30 @@
+/*---------------FOOTER--------------*/
+
+.footer__navbar{
+    background-color: rgb(4, 1, 34);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50%;
+}
+
+.footer__titles{
+    color: white;
+    font-family: $font-main;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: left;
+    font-size: larger;
+    &a:hover{
+        color:rgb(55, 131, 245);
+        transition: 0.4s;
+    }
+}
+
+footer h4{
+    font-family: $font-main;
+    letter-spacing: 1px;
+    font-size: larger;
+}

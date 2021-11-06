@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Metadata-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Fuentes de Google: Bebas Neue-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Bootstrap CDN-->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!--CSS-->
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="images/logo.png" type="imagen/ico">
+        <title>DataTech - Homepage</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="50px" width="50px" alt="Logo"></a>
+                    <a class="navbar-brand" href="index.html"><h1>Datatech</h1></a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav navbar-right me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">Homepage</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="equipo.html">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"  href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="container">
+                <div class="containercss">
+                    <div class="alert alert-secondary" role="alert">
+                        <h2>BLOG</h2>
+                    </div>
+                    <hr>
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-light" for="btncheck1">Technology</label>
+                        
+                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-light" for="btncheck2">Business</label>
+                        
+                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <label class="btn btn-outline-light" for="btncheck3">Startup</label>
+                    </div>
+                    <hr>
+                    <div>
+                        <form class="d-flex search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                                Search</button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="grid">
+                        <div class="grande uno">
+                            <a href="https://towardsdatascience.com/use-these-tools-to-learn-data-science-faster-8f3bb22371ba">
+                            <div class="card bg-dark text-white">
+                                <img src="images/blog/1.png" class="card-img" alt="card1">
+                                <div class="card-img-overlay">
+                                <h4 class="card-title">Use These Tools to Learn Data Science Faster</h4>
+                                <p class="card-text">Ready to use 1000+ AI/ML Code Templates for Professional Data Scientists.</p>
+                                <p class="card-text">Last updated: One week ago</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="chico dos">
+                            <div class="card text-dark bg-light mb-3">
+                                <a href="https://medium.com/before-semicolon/5-reasons-great-software-engineers-leave-their-jobs-2021-update-8e26de611c4d">
+                                <div class="card-header">Technology</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">5 Reasons Great Software Engineers Leave Their Jobs</h5>
+                                    <p class="card-text">Companies go out of their way to provide amazing perks for their engineers as they are an essential part of the business.</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="chico tres">
+                            <div class="card text-dark bg-light mb-3">
+                                <a href="https://medium.com/keep-productive/your-next-productivity-tool-is-8cf9532bb80d">
+                                <div class="card-header">Business</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Your Next Productivity Tool is…</h5>
+                                    <p class="card-text">How Planner Apps Will Rise & To-Do Apps Fall</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="chico cuatro">
+                            <div class="card text-dark bg-light mb-3">
+                                <a href="https://medium.com/swlh/to-code-or-not-to-code-8a3297904aae">
+                                <div class="card-header">Business</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">To Code or Not to Code</h5>
+                                    <p class="card-text">How to choose the best strategy for your project and goals</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="chico cinco">
+                            <div class="card text-dark bg-light mb-3">
+                                <a href="https://javascript.plainenglish.io/6-ways-programming-affects-your-brain-5a1d5917c72e">
+                                <div class="card-header">Technology</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">6 Ways Programming Affects Your Brain</h5>
+                                    <p class="card-text">Coding initiates different regions within the brain. Here are some ways coding can make you smarter.</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grande seis">
+                            <a href="https://medium.com/taptrovevc/making-work-work-in-europe-a3b01a04ba70">
+                            <div class="card bg-dark text-white">
+                                <img src="images/blog/6.jpeg" class="card-img" alt="card6">
+                                <div class="card-img-overlay">
+                                <h4 class="card-title">An update on Europe’s response to the future of work</h4>
+                                <p class="card-text">WorkTech startups across Europe have attracted an unprecedented amount of capital in a short period of time and a lot more will likely happen in the landscape over the next few years.</p>
+                                <p class="card-text">Last updated 3 mins ago</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer__navbar">
+            <nav  class="footer__titles">
+                <h4>Our socials:</h4>
+                <a href="https://instagram.com" target="_blank" class="footer__titles">Instagram</a>
+                <a href="https://twitter.com/home" target="_blank" class="footer__titles">Twitter</a>
+                <a href="https://linkedin.com" target="_blank" class="footer__titles">Linkedin</a>
+            </nav>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    </body>
+</html>
